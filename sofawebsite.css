@@ -1,0 +1,598 @@
+* {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url("img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+header nav {
+    align-items: center;
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    position: fixed;
+    width: 97vw;
+}
+
+.nav-left {
+    display: flex;
+}
+
+.nav-right ul {
+    display: none;
+}
+
+.hamburger-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+}
+
+.hamburger {
+    background-color: white;
+    border-radius: 50px;
+    height: 6px;
+    margin: 2px;
+    width: 40px;
+}
+
+.title-container {
+    align-items: center;
+    background-color: rgba(165, 42, 42, .2);
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    justify-content: center;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 130%;
+    text-align: center;
+}
+
+h3 {
+    font-size: 130%;
+}
+
+h4 {
+    font-family: 'Damion', cursive;
+    font-size: 110%;
+}
+
+.title {
+    font-size: 200%;
+}
+
+.sub-title {
+    font-size: 140%;
+}
+
+header h2, header h3, header h4 {
+    color: white;
+    font-weight: 500;
+}
+
+article {
+    padding: 20px 0 0 0;
+}
+
+article div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+article h3 {
+    color: rgb(238, 93, 40);
+    font-size: 150%;
+    margin-bottom: 10px;
+}
+
+.article2 {
+    background-color: #555;
+    color: white;
+}
+
+.article3 {
+    padding-top: 40px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 80vw;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+}
+
+main div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+main div img {
+    max-width: 100%;
+}
+
+main h3 {
+    font-variant-caps: all-small-caps;
+    font-size: 150%;
+}
+
+footer {
+    background-color: black;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+footer p {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+@media screen and (min-width:500px) {
+    header {
+        height: 400px;
+    }
+
+    .title-container {
+        height: 360px;
+    }
+
+    main div {
+        padding: 5px 30px 0 30px;
+    }
+}
+
+
+@media screen and (min-width:600px) {
+    header nav {
+        height: 50px;
+    }
+    header nav h2 {
+        font-size: 160%;
+    }
+    
+    h4 {
+        font-size: 130%;
+    }
+    
+    .title {
+        font-size: 250%;
+    }
+    
+    .sub-title {
+        font-size: 170%;
+    }
+
+
+    article h3 {
+        font-size: 180%;
+    }
+
+    article p {
+        font-size: 110%;
+    }
+
+
+    main h3 {
+        font-size: 190%;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+
+    footer p {
+        font-size: 120%;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .nav-right ul {
+        align-items: center;
+        display: flex;
+        list-style-type: none;
+    }
+
+    .nav-right ul li {
+        margin-left: 10px;
+    }
+
+    .nav-right a {
+        color: white;
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 110%;
+        text-decoration: none;
+    }
+
+    .home {
+        align-items: center;
+        background-color: brown;
+        display: flex;
+        height: 50px;
+        padding: 0 5px;
+    }
+
+    .button {
+        border: 1px solid white;
+        border-radius: 50px;
+        padding: 5px 10px;
+    }
+
+    .button a {
+        color: white;
+    }
+
+    .hamburger-container {
+        display: none;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width:800px) {
+    header {
+        height: 500px;
+    }
+
+    .title-container {
+        height: 460px;
+    }
+
+    header nav {
+        width: 97.5vw;
+    }
+}
+
+@media screen and (min-width:850px) {
+    header nav {
+        height: 65px;
+    }
+    
+    header nav h2 {
+        font-size: 190%;
+    }
+
+    .nav-right ul li {
+        margin-left: 15px;
+    }
+
+    .nav-right a {
+        font-size: 115%;
+    }
+
+    .home {
+        height: 65px;
+        padding: 0 10px;
+    }
+
+    h4 {
+        font-size: 190%;
+    }
+    
+    .title {
+        font-size: 320%;
+    }
+    
+    .sub-title {
+        font-size: 230%;
+    }
+
+
+    article h3 {
+        font-size: 220%;
+    }
+
+    article p {
+        font-size: 120%;
+    }
+
+    main h3 {
+        font-size: 200%;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+    footer p {
+        font-size: 140%;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    header nav {
+        height: 75px;
+        width: 98.3vw;
+    }
+    
+    header nav h2 {
+        font-size: 210%;
+    }
+
+    .nav-right ul li {
+        margin-left: 25px;
+    }
+
+    .nav-right a {
+        font-size: 130%;
+    }
+
+    .home {
+        height: 75px;
+        padding: 0 15px;
+    }
+
+    h4 {
+        font-size: 210%;
+    }
+    
+    .title {
+        font-size: 420%;
+    }
+    
+    .sub-title {
+        font-size: 300%;
+    }
+
+
+    article h3 {
+        font-size: 250%;
+    }
+
+    article p {
+        font-size: 150%;
+    }
+
+    main h3 {
+        font-size: 230%;
+    }
+
+    footer {
+        padding: 25px 0;
+    }
+
+    footer p {
+        font-size: 180%;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    header {
+        height: 600px;
+    }
+
+    .title-container {
+        height: 560px;
+    }
+
+    header nav {
+        height: 85px;
+        width: 98.6vw;
+    }
+    
+    header nav h2 {
+        font-size: 300%;
+    }
+
+    .nav-right ul li {
+        margin-left: 35px;
+    }
+
+    .nav-right a {
+        font-size: 170%;
+    }
+
+    .home {
+        height: 85px;
+        padding: 0 20px;
+    }
+
+    .button {
+        padding: 10px 15px;
+    }
+
+    h4 {
+        font-size: 260%;
+    }
+    
+    .title {
+        font-size: 600%;
+    }
+    
+    .sub-title {
+        font-size: 400%;
+    }
+
+    article h3 {
+        font-size: 320%;
+    }
+
+    article p {
+        font-size: 190%;
+    }
+
+    main h3 {
+        font-size: 300%;
+    }
+
+    footer {
+        padding: 30px 0;
+    }
+
+    footer p {
+        font-size: 200%;
+    }
+}
+
+@media screen and (min-width:1500px) {
+    header {
+        height: 750px;
+    }
+
+    .title-container {
+        height: 690px;
+    }
+
+    header nav {
+        height: 105px;
+    }
+    
+    header nav h2 {
+        font-size: 350%;
+    }
+
+    .nav-right ul li {
+        margin-left: 55px;
+    }
+
+    .nav-right a {
+        font-size: 200%;
+    }
+
+    .home {
+        height: 105px;
+        padding: 0 30px;
+    }
+
+    .button {
+        padding: 15px 20px;
+    }
+
+    h4 {
+        font-size: 340%;
+    }
+    
+    .title {
+        font-size: 700%;
+    }
+    
+    .sub-title {
+        font-size: 500%;
+    }
+
+    article h3 {
+        font-size: 390%;
+    }
+
+    article p {
+        font-size: 240%;
+    }
+
+    main {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+
+    main h3 {
+        font-size: 300%;
+    }
+
+    footer {
+        padding: 35px 0;
+    }
+
+    footer p {
+        font-size: 220%;
+    }
+}
+
+@media screen and (min-width:2000px) {
+    header {
+        height: 950px;
+    }
+
+    .title-container {
+        height: 890px;
+    }
+
+    header nav {
+        height: 125px;
+        width: 99vw;
+    }
+    
+    header nav h2 {
+        font-size: 430%;
+    }
+
+    .nav-right ul li {
+        margin-left: 80px;
+    }
+
+    .nav-right a {
+        font-size: 270%;
+    }
+
+    .home {
+        height: 125px;
+        padding: 0 30px;
+    }
+
+    .button {
+        padding: 20px 25px;
+    }
+
+    h4 {
+        font-size: 440%;
+    }
+    
+    .title {
+        font-size: 820%;
+    }
+    
+    .sub-title {
+        font-size: 600%;
+    }
+
+    article h3 {
+        font-size: 490%;
+    }
+
+    article p {
+        font-size: 310%;
+    }
+
+    main h3 {
+        font-size: 390%;
+    }
+
+    footer {
+        padding: 40px 0;
+    }
+
+    footer p {
+        font-size: 260%;
+    }
+}
